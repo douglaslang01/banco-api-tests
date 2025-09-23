@@ -1,10 +1,10 @@
 const request = require('supertest');
 const { expect } = require('chai');
+require('dotenv').config();
 
-const baseUrl = 'http://localhost:3000';
 
 async function getToken() {
-    const response = await request(baseUrl)
+    const response = await request(process.env.BASE_URL)
         .post('/login')
         .set('Content-Type', 'application/json')
         .send({
@@ -22,7 +22,7 @@ describe('Transfers', () => {
             // Get Token
             const token = await getToken();
 
-            const respose = await request(baseUrl)
+            const respose = await request(process.env.BASE_URL)
                 .post('/transferencias')
                 .set('Content-Type', 'application/json')
                 .set('Authorization', `Bearer ${token}`)
@@ -40,7 +40,7 @@ describe('Transfers', () => {
             // Get Token
             const token = await getToken();
 
-            const respose = await request(baseUrl)
+            const respose = await request(process.env.BASE_URL)
                 .post('/transferencias')
                 .set('Content-Type', 'application/json')
                 .set('Authorization', `Bearer ${token}`)

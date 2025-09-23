@@ -1,12 +1,11 @@
 const request = require('supertest');
 const { expect } = require('chai');
-
-const app = 'http://localhost:3000'; // Replace with your API base URL
+require('dotenv/config')
 
 describe('Login API Tests', () => {
     describe('POST /login', () => {
         it('should return 200 and a token for valid credentials', async () => {
-            const response = await request(app)
+            const response = await request(process.env.BASE_URL)
                 .post('/login')
                 .set('Content-Type', 'application/json')
                 .send({
