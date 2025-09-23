@@ -4,11 +4,15 @@ const auth = require('../../helpers/authentication')
 require('dotenv').config();
 
 
+
 describe('Transfers', () => {
+    let token;
+    beforeEach(async () => {
+        token = await auth.getToken(process.env.USER, process.env.PASSWORD); // Get Token
+    })
+
     describe('POST /transferencias', () => {
         it('Deve retornar sucesso com 201 quando valor de transferencia for igual ou acima de R$10,00', async () => {
-            const token = await auth.getToken(process.env.USER, process.env.PASSWORD); // Get Token
-
             const respose = await request(process.env.BASE_URL)
                 .post('/transferencias')
                 .set('Content-Type', 'application/json')
@@ -24,8 +28,6 @@ describe('Transfers', () => {
         })
 
         it('Deve retornar falha com 422 quando valor de transferencia for abaixo de R$10,00', async () => {
-            const token = await auth.getToken(process.env.USER, process.env.PASSWORD); // Get Token
-
             const respose = await request(process.env.BASE_URL)
                 .post('/transferencias')
                 .set('Content-Type', 'application/json')
