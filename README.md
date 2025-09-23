@@ -4,12 +4,12 @@ Este projeto realiza testes automatizados na API REST do [banco-api](https://git
 
 ## 🧪 Tecnologias utilizadas
 
-- **Node.js** — Ambiente de execução JavaScript
-- **Mocha** — Framework de testes
-- **Chai** — Biblioteca de asserções
-- **Supertest** — Requisições HTTP para testes
-- **Mochawesome** — Geração de relatórios em HTML
-- **dotenv** — Gerenciamento de variáveis de ambiente
+- **Linguagem:** JavaScript (Node.js)
+- **Framework de testes:** [Mocha](https://mochajs.org/)
+- **Biblioteca de requisições HTTP:** [Supertest](https://github.com/ladjs/supertest)
+- **Biblioteca de asserções:** [Chai](https://www.chaijs.com/)
+- **Relatórios de testes:** [Mochawesome](https://github.com/adamgruber/mochawesome)
+- **Gerenciamento de variáveis de ambiente:** [dotenv](https://github.com/motdotla/dotenv)
 
 ## 📁 Estrutura de pastas
 ```
