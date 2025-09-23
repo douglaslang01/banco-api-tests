@@ -7,7 +7,7 @@ require('dotenv').config();
 
 describe('Transfers', () => {
     let token;
-    beforeEach(async () => {
+    before(async () => {
         token = await auth.getToken(process.env.USER, process.env.PASSWORD); // Get Token
     })
 
