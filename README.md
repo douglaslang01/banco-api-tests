@@ -14,11 +14,11 @@ Este projeto realiza testes automatizados na API REST do [banco-api](https://git
 ## 📁 Estrutura de pastas
 ```
 banco-api-tests/ 
-├── test/                 # Testes organizados por funcionalidades 
+├── test/api/                 # Testes organizados por funcionalidades 
 │   ├── login.test.js 
 │   └── transferencias.test.js 
-├── mochawesome-report/   # Relatório HTML gerado automaticamente 
-├── .env                  # Configuração da variável BASE_URL 
+├── mochawesome-report/       # Relatório HTML gerado automaticamente 
+├── .env                      # Configuração da variável BASE_URL 
 ├── .gitignore 
 ├── package.json 
 └── README.md
