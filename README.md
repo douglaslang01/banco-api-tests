@@ -57,7 +57,7 @@ Para executar os testes e abrir o relatório HTML automaticamente, adicione o se
 
 No Windows, substitua `open` por `start`.
 
-## Dependencias utilizadas e suas documentações
+## 📚 Dependencias utilizadas e suas documentações
 
 - [Mocha](https://mochajs.org/) - Framework de execução de testes
 - [Chai](https://github.com/ladjs/supertest) - Biblioteca para chamadas HTTP
