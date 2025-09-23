@@ -1,6 +1,6 @@
 # banco-api-tests
 
-Este projeto realiza testes automatizados na API REST do **banco-api**, garantindo que suas funcionalidades estejam funcionando corretamente e contribuindo para a qualidade do sistema.
+Este projeto realiza testes automatizados na API REST do [banco-api](https://github.com/douglaslang01/banco-api), garantindo que suas funcionalidades estejam funcionando corretamente e contribuindo para a qualidade do sistema.
 
 ## 🧪 Tecnologias utilizadas
 
