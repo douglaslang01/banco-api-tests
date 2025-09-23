@@ -30,6 +30,8 @@ Antes de rodar os testes, crie um arquivo chamado .env na raiz do projeto com o 
 
 ```
 BASE_URL=http://localhost:3000
+USER = 'xxxxxxx'
+PASSWORD = 'xxxxx'
 ```
 
 Substitua `http://localhost:3000` pela URL onde a API **banco-api** está rodando.
